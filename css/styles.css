@@ -88,6 +88,7 @@ button {
   align-items: center;
   background: #ffffff;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -353,6 +354,9 @@ border-radius: 4px;
   background: #f4f4fd;
   padding: 120px 0;
 }
+.fourth-container {
+  padding: 32px 0
+}
 .team-item {
   background-color: var(--white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -429,21 +433,23 @@ border-radius: 4px;
   background-color: var(--alternative-color);
 }
 
-
+.socials-icon {
+  fill: #f4f4fd;
+}
 
 /*==== Customers section ==== */
 
 .customers-section {
-  padding-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px
 }
 
 .customers-title {
-  margin-top: 120px;
-  margin-bottom: 72px;
+  margin-bottom: 72px; 
   color: var(--primary-color);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -462,13 +468,14 @@ border-radius: 4px;
   height: 88px;
   border: 1px solid #8E8F99;
   border-radius: 4px;
+  color: #8E8F99 ;
 }
 .clients-link:hover,
 .clients-link:focus {
-  border-color: #404BBF;
+  border-color: var(--alternative-color);
 }
 .clients-icon {
-fill: #8E8F99;
+fill: currentColor;
 }
 .clients-icon:hover,
 .clients-icon:focus {
@@ -534,6 +541,7 @@ fill: #8E8F99;
   font-weight: 500;
 font-size: 16px;
 line-height: 24px;
+letter-spacing: 0.02;
 }
 
 .footer-social-list {
@@ -560,7 +568,7 @@ line-height: 24px;
 
 
 .sm-icon {
-  fill: var(--white-color);
+  fill: #f4f4fd;
 }
 /* ========= PORTFOLIO =========== */
 
@@ -725,8 +733,12 @@ line-height: 24px;
   row-gap: 48px;
 }
 
-.project-item:hover,
- .project-item:focus {
+.project-link {
+  display: block;
+}
+
+.project-link:hover,
+ .project-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
