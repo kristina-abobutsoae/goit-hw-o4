@@ -479,7 +479,8 @@ fill: currentColor;
 }
 .clients-icon:hover,
 .clients-icon:focus {
-  fill: var(--alternative-color);
+  border-color: var(--alternative-color);
+  color: var(--alternative-color);
 }
 
 
